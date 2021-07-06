@@ -14,7 +14,3 @@ backDrop.addEventListener('click',(e)=>{
 document.getElementById('btn-close').addEventListener('click',()=>{
     backDrop.style.display = 'none';
 });
-
-// window.addEventListener("resize", function(event) {
-//     console.log(document.body.clientWidth + ' wide by ' + document.body.clientHeight+' high');
-// })
