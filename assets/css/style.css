@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ body{
+    overflow-x:hidden
+ }
+
+.header {
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+} 
+#links > a{
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+} 
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.gallery > div > img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 12px;
+    cursor: pointer;
+} 
+.gallery > div {
+    margin: 1rem;
+    position: relative;
+}
+
+.gallery > div > p {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+    bottom: 2rem;
+    width: 14rem;
+    padding: 0.5rem;
+}
+.footer{
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#back-drop{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+ }
+ #modal, #modelImages{
+     width: 25rem;
+     height: 25rem;
+     border-radius: 12px;
+ }
+ #modal {
+     position: relative;
+
+ }
+
+ #close{
+     color: white;
+     position: absolute;
+     top: 1rem;
+     right: 1rem;
+ }
+ #close > span {
+     border: 2px solid white;
+     border-radius: 100%;
+     padding: 0.2rem 0.3rem;
+     cursor: pointer;
+ }
